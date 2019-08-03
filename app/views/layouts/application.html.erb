@@ -43,6 +43,37 @@
       </div>
     </nav>
 
+  
+    <div class="container" id="content">
+      <div class="text-center">
+        <h1 class="text-primary">Random quote generator</h1>
+       </div> 
+        <div id = quote class="look-quote well col-xs-12 text-center">
+           <h2>"Friends are Family we choose"</h2>
+           <h3 class="col-4 offset-6">"-Stay Connect"</h3>
+        </div>
+        <br />
+
+      <div class="col-xs-12 text-center">
+        <button id="getQuote"
+              class="btn btn-primary">See new Quote
+        </button>
+      </div> 
+    </div>
+
+    <script>
+      $("#getQuote").on('click', function() {
+         $.ajaxSetup ({cache:false});
+
+         $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&callback=", function(data) {
+
+          $(".look-quote").html(data[0].content + " - " + data[0].title)
+        });
+      })
+    </script>
+    
+
+
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 

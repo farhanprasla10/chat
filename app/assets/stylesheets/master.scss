@@ -1,4 +1,5 @@
-
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 #messages {
   max-height: 450px;
@@ -6,4 +7,29 @@
   .avatar {
     margin: 0.5rem;
   }
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  background-color: white;
+}
+
+.pika:hover {
+  opacity: 0.6;
+}
+
+
+#quote {
+  margin-top: 50px;
+  background-color: #569EDD;
+  color: white;
+}
+
+p {
+  color: black;
+}
+
+.look-quote {
+ font-family: "Playfair Display", serif;  
 }
