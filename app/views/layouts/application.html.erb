@@ -32,7 +32,11 @@
            </li>
             <li>
             <a href="#chatSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">CHAT ROOMS</a>
-             <ul class="chatSubmenu"></ul>
+             <ul class="collapse list-unstyled" id="chatSubmenu">
+              <% chat_rooms.each do |chat_room| %>
+                <%= render partial: "chat_rooms/chat_room", locals: { chat_room: chat_room } %>
+                 <% end %>
+            </ul>           
             </li> 
             <li>
               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Login</a>
