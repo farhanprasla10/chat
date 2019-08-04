@@ -7,6 +7,7 @@ FactoryBot.define do
     password_confirmation { "secretPassword" }
   end
   factory :chat_room do
+    title { "hello" }
     association :user
   end
 end

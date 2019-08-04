@@ -38,16 +38,14 @@ RSpec.describe ChatRoomsController, type: :controller do
     end
   end
 
-  describe "chats#create action" do
+  describe "chat_rooms#create action" do
     
     it "should successfully create a new chat_room in our database" do
        user = FactoryBot.create(:user)
         sign_in user
-
-
-        post :create, params: { chat_room: params }
+        post :create, params: { chat_room: { title: 'Hello world!'  } }
         
-        expect(response).to redirect_to root_path
+        expect(response).to redirect_to chat_rooms_path
     end
    end 
 end
