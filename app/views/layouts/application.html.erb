@@ -18,7 +18,7 @@
 
     
   <div class="wrapper">
-    <nav id="sidebar">
+    <div class id="sidebar">
       <div class="sidebar-header">
          <h3>CONNECT</h3>
       </div>
@@ -27,10 +27,13 @@
           <li>
              <%= link_to 'Home', root_url, class: 'navbar-brand' %>
           </li>
-         
           <li>
             <%= link_to 'New Room', new_chat_room_path, class: 'nav-link' %>
            </li>
+            <li>
+            <a href="#chatSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">CHAT ROOMS</a>
+             <ul class="chatSubmenu"></ul>
+            </li> 
             <li>
               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Login</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
@@ -52,7 +55,7 @@
            </ul>
         </li>
     </ul>
-  </nav>
+  </div>
 
    <div id="content">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
