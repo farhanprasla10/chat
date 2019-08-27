@@ -1,8 +1,6 @@
-CHAT
-
 ## Overview
 
-Chat is an Real time application with Action Cabl. It allows user to chat to create new chat room. And with action cable user is bale send and recieve messages. Radmon quote generator is an external API which generate quotes written by famous people.
+CHAT is an Real time application with Action Cabl. It allows user to chat to create new chat room. And with action cable user is bale send and recieve messages. Radmon quote generator is an external API which generate quotes written by famous people.
 
 ## Tech used
 
