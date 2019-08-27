@@ -1,24 +1,9 @@
-# README
+CHAT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Overview
 
-Things you may want to cover:
+Chat is an Ruby on Rails application with SQL database. It allows user to chat to create new chat room. And with an External API radmon quotes can be qenerated which are written by famous people. 
 
-* Ruby version
+###Views
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+New chat room
